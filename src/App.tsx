@@ -1,7 +1,10 @@
+import Structure from "./components/structure/Structure"
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+     <Structure /> 
+    </div>
   )
 }
 
