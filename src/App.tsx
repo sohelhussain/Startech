@@ -4,11 +4,15 @@ import NameForm from "./components/nameForm/NameForm"
 import Structure from "./components/structure/Structure"
 
 function App() {
-  const [userName, setUserName] = useState("kjb");
+// localStorage.clear()
+  const [userName, setUserName] = useState("");
+  if(localStorage.length == 0){
+    localStorage.setItem("user", "")
+  }
   return (
     <div>
      <Structure /> 
-     {userName == "" ? <NameForm /> : <Homepage />}
+     {localStorage.getItem("user") == "" ? <NameForm username={userName} setUsername={setUserName} /> : <Homepage />}
     </div>
   )
 }
