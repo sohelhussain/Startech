@@ -15,7 +15,7 @@ function NameForm({ username, setUsername }: { username: string, setUsername: Di
   return (
     <div className='relative h-screen w-screen'>
       <div className='absolute h-[95%] w-[97%] p-6 overflow-hidden rounded-3xl bg-linear-to-r from-[#EBEEED] to-[#C6D8E1]'>
-        {/* <img className='h-full w-full object-cover' src="https://cdn.prod.website-files.com/65ef0d86eff3b9ba6b18aef9/6601b7d63c31da7e5be13f14_Frame%201815%20copy-min%20(1).webp" alt="" /> */}
+        <img className='h-full w-full object-cover' src="https://cdn.prod.website-files.com/65ef0d86eff3b9ba6b18aef9/6601b7d63c31da7e5be13f14_Frame%201815%20copy-min%20(1).webp" alt="" />
       </div>
       <div className="h-screen w-full flex justify-center items-center p-40">
         <div className='h-1/2 -translate-y-5 w-[48vw] relative'>
