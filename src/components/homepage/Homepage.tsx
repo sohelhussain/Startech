@@ -3,6 +3,8 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import React, { useRef } from 'react'
 import Homelandingpage from './Homelandingpage';
+import Seccontainer from './Seccontainer';
+import Tricontainer from './Tricontainer';
 
 function Homepage() {
 
@@ -29,6 +31,8 @@ useGSAP(() => {
         <img ref={lendImage2} className='relative h-[110%] bottom-0 mt-80 scale-125 ml-20' src="https://cdn.prod.website-files.com/65ef0d86eff3b9ba6b18aef9/65f462326356e70fa630f505_hero1-img%20(1).png" alt="" />
       </div>
       <Homelandingpage />
+      <Seccontainer />
+      <Tricontainer />
     </div>
   )
 }
