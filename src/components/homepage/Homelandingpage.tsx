@@ -12,12 +12,14 @@ const headText2 = useRef(null);
 
 
 useGSAP(() => {
+    
   gsap.from([textImageRef1.current, textImageRef2.current],{
     y:200,
     opacity:0,
     duration:0.8,
     stagger:0.1
   })
+    
   gsap.from([headText1.current, headText2.current],{
     opacity:0,
     duration: 1,
